@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Animasi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .gambar {
+            width: 300px; /* Sesuaikan ukuran gambar */
+            border-radius: 10px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+            animation: putar 3s infinite alternate;
+        }
+        .teks-bergerak {
+            font-size: 20px;
+            font-weight: bold;
+            color: #ff4500;
+            margin-top: 20px;
+        }
+        @keyframes putar {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(10deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="gambar.jpg" alt="Gambar Contoh" class="gambar">
+        <marquee class="teks-bergerak">welcome to my web guys!</marquee>
+    </div>
+</body>
+</html>
